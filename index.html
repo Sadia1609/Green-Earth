@@ -62,13 +62,13 @@
 </section>
 
 <!-- main section -->
- <main class="bg-[#f0fdf4] w-full h-[1000px] max-auto grid lg:grid-cols-12 gap-6 p-6">
+ <main class="bg-[#f0fdf4] w-full  max-auto grid lg:grid-cols-12 gap-6 p-6">
 
 <!-- categories -->
   <aside class="lg:col-span-3 col-span-12">
     <div class="bg-[#f0fdf4] p-4">
       <h2 class="font-bold mb-3">Categories</h2>
-      <div id="category-container" class="flex flex-col gap-2">
+      <div id="category-container" class="flex flex-col md:flex-col gap-2 overflow-x-auto">
 
       </div>
   </div>
@@ -84,6 +84,7 @@
 </div>
 
     <div id="plant-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-3">
+      
 
     </div>
 
@@ -107,11 +108,42 @@
   </div>
 </div>
 
+
 </section>
+
+<!-- cart -->
+ <aside class="lg:col-span-3 col-span-12">
+  <div class="bg-white p-4 rounded-lg shadow">
+    <h2 class="font-bold">Your Cart</h2>
+    <div id="cart" class="mt-4 grid gap-3">
+
+    </div>
+
+    <div class="mt-4 bg-[#f0fdf4] p-3 rounded">
+      <div class="flex justify-between">
+        Total <span id="total-price">0</span>৳
+
+      </div>
+
+    </div>
+
+  </div>
+
+ </aside>
+
+
  </main>
 
+  <!--modal-->
+    <dialog id="detail-modal" class="modal">
+      <div class="modal-box max-w-3xl">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" id="close-modal">✕</button>
+        <div id="detail-content"></div>
+      </div>
+    </dialog>
+
  <!-- impact -->
-  <div class="bg-[#cff0dc] h-[250px]">
+  <div class="bg-[#cff0dc]">
     <h3 class="font-semibold text-3xl text-center">Our Impact</h3>
 <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-6">
   
@@ -178,6 +210,7 @@
     </form>
   </div>
 </div>
+
 
 <footer>
   <footer class="bg-[#14532d] text-white text-center py-4">
