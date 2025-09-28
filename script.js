@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   loadCategories();
   loadAllPlants();
-  
+
   function loadCategories() {
     fetch('https://openapi.programming-hero.com/api/categories')
       .then(res => res.json())
@@ -113,5 +113,70 @@ document.addEventListener('DOMContentLoaded', function () {
       .finally(hideSpinner);
   }
 
+  function displayPlants(plants) {
+    plantContainer.innerHTML = '';
+    
+    plantContainer.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5';
+
+    plants.forEach(plant => {
+      const id = plant.id || plant._id || plant.plant_id || plant.plantId;
+
+      const name = plant.name || plant.plant_name || plant.title;
+      const desc = plant.description || plant.details || plant.about || '';
+      const category = plant.category || plant.category_name;
+      const image = plant.image || plant.img || plant.picture || plant.plant_img;
+      const price = Number(plant.price || plant.cost || plant.amount);
+
+      const card = document.createElement('div');
+      card.className = 'p-4 bg-white rounded-lg shadow flex flex-col justify-between';
+
+      card.innerHTML = `
+        <img src="${image}" alt="${name}" class="card-img w-full h-48 object-cover rounded">
+        <h3 class="mt-2 font-bold plant-title cursor-pointer text-lg" data-id="${id}">${name}</h3>
+        <p class="text-sm text-gray-600">${desc.slice(0, 90)}${desc.length > 90 ? '...' : ''}</p>
+        <div class="mt-2 flex items-center justify-between">
+          <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">${category}</span>
+          <span class="font-semibold text-black">৳${price}</span>
+        </div>
+        <div class="mt-3">
+          <button class="bg-green-900 text-white add-to-cart btn btn-sm btn-success w-full rounded-full" data-id="${id}" data-name="${name}" data-price="${price}">Add to Cart</button>
+        </div>
+      `;
+
+
+      plantContainer.appendChild(card);
+    });
+  }
+
+
+  function loadPlantDetails(plantId) {
+    detailContent.innerHTML = '<p>Loading...</p>';
+    fetch(`https://openapi.programming-hero.com/api/plant/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        const plant = data.data || data.plant || data;
+        
+        const name = plant.name || plant.plant_name || plant.title;
+        const image = plant.image || plant.img || plant.picture;
+        const description = plant.details || plant.description || plant.about;
+        const category = plant.category || plant.category_name || '';
+
+        detailContent.innerHTML = `
+          <img src="${image}" class="detail-img w-full h-auto object-cover rounded mb-3" alt="${name}">
+          <h2 class="text-xl font-bold mb-2">${name}</h2>
+          <p class="text-sm text-gray-700 mb-2">${description}</p>
+          <p class="text-sm"><strong>Category:</strong> ${category}</p>
+        `;
+
+        if (detailModal.showModal) detailModal.showModal();
+        else detailModal.style.display = 'block';
+      })
+    
+  }
+
+  closeModalBtn?.addEventListener('click', () => {
+    if (detailModal.close) detailModal.close();
+    else detailModal.style.display = 'none';
+  });
 
 });
