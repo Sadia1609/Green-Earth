@@ -1,169 +1,162 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
+# 🌱 Plant a Tree Campaign Website
 
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
-
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
+A responsive campaign website built using **HTML, CSS, and Vanilla JavaScript**.
+This project promotes tree plantation, allows users to browse tree categories, view details, and manage a cart with real-time price calculation.
 
 ---
-# Green Earth
+
+## 🔗 Live Demo
 
 
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
-
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
-
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
-
+```bash
+https://greenassignment.netlify.app/
+```
 
 ---
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
+
+## 📸 Screenshots
+
+```md
+![Home Page]("C:\Users\USER\projects_PH\Assignment-06\homepage.png")
+![Tree Categories]("C:\Users\USER\projects_PH\Assignment-06\categories.png")
+![Modal View]("C:\Users\USER\Pictures\Screenshots\modal view.png")
 ```
 
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
-
-
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
 ---
 
+## 🚀 Features Overview
 
+### 🧭 Navbar
 
+* Logo / Website name on the left
+* Navigation menu in the center
+* **Plant a Tree** CTA button on the right
 
-## ✅ Main Requirements 
+### 🖼 Banner Section
 
-#### 1) Navbar
+* Background image
+* Campaign title & subtitle
+* Centered call-to-action button
 
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
+### ℹ️ About Campaign
 
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
+* Section heading
+* Image on the left and right
+* Campaign description on the middle
 
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
+### 📊 Our Impact
 
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
+* 3 statistic cards showing campaign impact
 
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
+### 🌳 Plant a Tree Today
 
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
+* User form:
+
+  * Name
+  * Email
+  * Number of Trees
+
+### 🔻 Footer
+
+* Copyright information
 
 ---
-#### 7) Create a README file to answer the following question-
 
+## 📱 Responsiveness
 
-#### 1) What is the difference between var, let, and const?
+* Fully responsive layout
+* Optimized for:
 
-#### 2) What is the difference between map(), forEach(), and filter()? 
+  * Desktop
+  * Tablet
+  * Mobile devices
 
-#### 3) What are arrow functions in ES6?
+---
 
-#### 4) How does destructuring assignment work in ES6?
+## ⚙️ Core Functionalities
 
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
+### 🌳 Dynamic Category Loading
 
-## ⚙️ Functionalities 
+* Tree categories load dynamically on the left side
+* Data handled using **Vanilla JavaScript**
 
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
+### 🖱 Category-wise Tree Display
 
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
+* Clicking a category loads related trees
+* Trees are displayed in a **3-column card layout**
 
-Display in a 3-column card layout.
+### 🧾 Tree Cards Include
 
-3) Card Contents 
- Each card includes:
+* Tree image
+* Clickable tree name
+* Short description
+* Category
+* Price
+* **Add to Cart** button
 
-        - Image
+### 🪟 Modal Details View
 
-        -  Name
+* Clicking on a tree name opens a modal
+* Modal shows full tree details
 
-        - Short description
+---
 
-        - Category
+## 🧪 Advanced Features & Challenges
 
-        - Price
+### 🛒 Add to Cart
 
-        - Add to Cart button
+* Adds selected tree to cart
+* Displays tree name in cart list
 
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
+### 💰 Total Price Calculation
 
+* Automatically updates total price
 
-##  🧪 Challenges 
+### ❌ Remove from Cart
 
+* Removes tree from cart
+* Deducts price instantly
 
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
+### ⏳ Loading Spinner
 
-    2) Total Calculation 
-    Calculate total price of trees in cart.
+* Spinner appears while data is loading
 
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
+### 🎯 Active Category State
 
-    4) Loading Spinner
-    Show spinner while data is loading.
+* Highlights the currently selected category
 
-    5) Active Button State 
-    Highlight active category button when selected.
+---
 
+## 🧰 Technology Stack
 
+* **HTML5**
+* **CSS3** (Vanilla / Tailwind / DaisyUI)
+* **JavaScript (ES6 – Vanilla)**
 
-🧰 Technology Stack:
-        
-        HTML
+❌ No JavaScript frameworks used
 
-        CSS (Vanilla / Tailwind / DaisyUI)
+---
 
-        JavaScript (Vanilla only, no frameworks)
+---
 
-📌 Rules
-✅ At least 5 meaningful commits
+## 🛠 Installation & Usage
 
-❌ No dummy text or Lorem Ipsum — must use relevant content
+### 1️⃣ Clone the Repository
 
+```bash
+git clone https://github.com/your-username/plant-a-tree-campaign.git
+```
 
+### 2️⃣ Navigate to Project Folder
 
+```bash
+cd plant-a-tree-campaign
+```
 
+### 3️⃣ Open in Browser
 
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
+```bash
+Open index.html using Live Server or directly in your browser
+```
 
 ---
