@@ -6,21 +6,7 @@ This project promotes tree plantation, allows users to browse tree categories, v
 ---
 
 ## 🔗 Live Demo
-
-
-```bash
 https://greenassignment.netlify.app/
-```
-
----
-
-## 📸 Screenshots
-
-```md
-![Home Page]("C:\Users\USER\projects_PH\Assignment-06\homepage.png")
-![Tree Categories]("C:\Users\USER\projects_PH\Assignment-06\categories.png")
-![Modal View]("C:\Users\USER\Pictures\Screenshots\modal view.png")
-```
 
 ---
 
