@@ -6,7 +6,10 @@ This project promotes tree plantation, allows users to browse tree categories, v
 ---
 
 ## 🔗 Live Demo
-https://greenassignment.netlify.app/
+
+<img src ="https://i.postimg.cc/2yFJ8kRt/green-earth.png" alt = "green-earth" size = "50%"/>
+
+https://green-earth-olive.vercel.app/
 
 ---
 
