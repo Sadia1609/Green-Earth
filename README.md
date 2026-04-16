@@ -5,7 +5,7 @@ This project promotes tree plantation, allows users to browse tree categories, v
 
 ---
 <img src ="https://i.postimg.cc/2yFJ8kRt/green-earth.png" alt = "green-earth" size = "50%"/>
-## 🔗 Live Demo
+🔗 Live Demo
 
 https://green-earth-olive.vercel.app/
 
