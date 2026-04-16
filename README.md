@@ -4,10 +4,8 @@ A responsive campaign website built using **HTML, CSS, and Vanilla JavaScript**.
 This project promotes tree plantation, allows users to browse tree categories, view details, and manage a cart with real-time price calculation.
 
 ---
-
-## 🔗 Live Demo
-
 <img src ="https://i.postimg.cc/2yFJ8kRt/green-earth.png" alt = "green-earth" size = "50%"/>
+## 🔗 Live Demo
 
 https://green-earth-olive.vercel.app/
 
